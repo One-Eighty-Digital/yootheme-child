@@ -1,0 +1,142 @@
+{
+    "@import": "./element.php",
+    "name": "cf-panel-slider_item",
+    "title": "Item",
+    "width": 500,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "defaults": {
+        "image_position": "center-center"
+    },
+    "placeholder": {
+        "props": {
+            "title": "Item",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+    },
+    "fields": {
+        "image": {
+            "label": "Image",
+            "type": "image",
+            "source": true
+        },
+        "panel_card_image": {
+            "type": "checkbox",
+            "text": "Align image without padding",
+            "enable": "image"
+        },
+        "image_alt": {
+            "label": "Image Alt",
+            "source": true,
+            "show": "image && !video"
+        },
+        "_media": {
+            "type": "button-panel",
+            "panel": "builder-section-media",
+            "text": "Edit Settings",
+            "source": true,
+            "show": "image || video"
+        },
+        "title": {
+            "label": "Title",
+            "source": true
+        },
+        "meta": {
+            "label": "Meta",
+            "source": true
+        },
+        "content": {
+            "label": "Content",
+            "type": "editor",
+            "source": true
+        },
+        "link_text": {
+            "label": "Link Text",
+            "default": "READ MORE",
+            "source": true
+        },
+        "link": "${builder:link}",
+        "source": "${builder.source}"
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        "image",
+                        "panel_card_image",
+                        "_media",
+                        "image_alt",
+                        "title",
+                        "meta",
+                        "content",
+                        "link",
+                        "link_text"
+                    ]
+                },
+                {
+                    "title": "Advanced",
+                    "fields": [
+                        "source"
+                    ]
+                }
+            ]
+        }
+    },
+     "panels": {
+        "builder-section-media": {
+            "title": "Image/Video",
+            "width": 500,
+            "fields": {
+                "image_size": {
+                    "label": "Image Size",
+                    "description": "Determine whether the image will fit the section dimensions by clipping it or by filling the empty areas with the background color.",
+                    "type": "select",
+                    "default": "",
+                    "options": {
+                        "Auto": "",
+                        "Cover": "cover",
+                        "Contain": "contain"
+                    },
+                    "show": "image && !video"
+                },
+                "image_position": {
+                    "label": "Image Position",
+                    "description": "Set the initial background position, relative to the section layer.",
+                    "type": "select",
+                    "options": {
+                        "Top Left": "top-left",
+                        "Top Center": "top-center",
+                        "Top Right": "top-right",
+                        "Center Left": "center-left",
+                        "Center Center": "center-center",
+                        "Center Right": "center-right",
+                        "Bottom Left": "bottom-left",
+                        "Bottom Center": "bottom-center",
+                        "Bottom Right": "bottom-right"
+                    },
+                    "show": "image && !video"
+                },
+                "media_overlay": {
+                    "label": "Overlay Color",
+                    "description": "Set an additional transparent overlay to soften the image or video.",
+                    "type": "gradient",
+                    "internal": "media_overlay_gradient"
+                }
+            },
+            "fieldset": {
+                "default": {
+                    "fields": [
+                        "image_size",
+                        "image_position",
+                        "media_overlay"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "td-form",
+    "title": "Form",
+    "icon": "${url:images\/form.svg}",
+    "group": "connected-church",
+    "iconSmall": "${url:images\/form.svg}",
+    "element": true,
+    "templates": {
+        "render": ".\/templates\/template.php"
+    },
+    "fields": {
+        "form": {
+            "label": "Form",
+            "type": "select",
+            "default": "0",
+            "options": {
+                "Select One": 0,
+                "Newsletter Signup": 1
+            }
+        }
+    }
+}

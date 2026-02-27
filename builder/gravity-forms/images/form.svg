@@ -1,0 +1,31 @@
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+   <g transform="matrix(1,0,0,1,-46.443,0)">
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <path d="M46.443,0L46.443,512L465.556,512L465.556,0L46.443,0ZM435.557,482L76.443,482L76.443,30L166.333,30L166.333,100.333L345.667,100.333L345.667,30L435.557,30L435.557,482ZM315.667,30L315.667,70.333L196.333,70.333L196.333,30L315.667,30Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="194.832" y="155.667" width="183.835" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="133.333" y="155.667" width="31.499" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="194.832" y="219.667" width="183.835" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="133.333" y="219.667" width="31.499" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="133.333" y="283.667" width="31.499" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="194.832" y="283.667" width="183.835" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <rect x="133.333" y="379.667" width="80" height="30" style="fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.0585938,0,0,0.0585938,43.7217,0)">
+            <path d="M298.667,394.787L277.273,373.394L256.06,394.606L298.667,437.213L362.606,373.273L341.394,352.06L298.667,394.787Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

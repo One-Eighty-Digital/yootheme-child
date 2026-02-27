@@ -1,0 +1,12 @@
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.cf-icon-color-stroke {stroke:#33CC99 !important;}
+	.cf-icon-color-fill {fill:#33CC99 !important;}
+</style>
+<polygon fill="#444444" points="13,13.1 12.1,12.1 5.5,18.7 6.9,20.1 12.1,14.9 13,15.9 "/>
+<polygon fill="#444444" points="13,27 0,27 0,3 13,3 13,5 2,5 2,25 13,25 "/>
+<rect class="cf-icon-color-fill" x="13" y="3" fill="#33CC99" width="2" height="24"/>
+<path fill="#444444" d="M15,3v12.1l1.5,1.5l2.2-2.2l5.9,5.9l-1.4,1.4l-4.4-4.5l-0.8,0.8l2.2,2.2l-1.4,1.4L15,17.9V27h15V3H15z
+	 M23.7,12.8c-0.6,0-1.1-0.2-1.6-0.5c1.2-0.1,2.2-1.1,2.2-2.3s-1-2.3-2.2-2.3c0.5-0.3,1-0.5,1.6-0.5c1.6,0,2.8,1.3,2.8,2.8
+	S25.2,12.8,23.7,12.8z"/>
+</svg>

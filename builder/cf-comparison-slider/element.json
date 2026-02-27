@@ -1,0 +1,139 @@
+{
+    "version": "1.5",
+    "@import": "./element.php",
+    "name": "cf-comparison-slider",
+    "title": "cf Comparison Slider",
+    "group": "cloudfood",
+    "icon": "${url:images/icon.svg}",
+    "iconSmall": "${url:images/iconSmall.svg}",
+    "element": true,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+
+    "fields": {
+
+        "before_image": "${builder:image}",
+        "before_image_alt": {
+            "label": "Before image Alt",
+            "description": "Enter the image's alt attribute.",
+            "enable": "before_image"
+        },
+        "text_before": {
+            "label": "Text Before",
+            "type": "text",
+            "default": "Before",
+            "source": true
+        },
+        "after_image": "${builder:image}",
+        "after_image_alt": {
+            "label": "After image Alt",
+            "description": "Enter the image's alt attribute.",
+            "enable": "after_image"
+        },
+        "text_after": {
+            "label": "Text After",
+            "type": "text",
+            "default": "After",
+            "source": true
+        },
+        "offset": {
+            "label": "Offset",
+            "description": "Define how much of the before image is visible when the page loads",
+            "type": "range",
+            "default": 0.5,
+            "attrs": {
+                "min": 0,
+                "max": 1,
+                "step": 0.1
+            }
+        },
+        "direction": {
+            "label": "Direction",
+            "type": "select",
+            "default": "horizontal",
+            "options": {
+                "Horizontal": "horizontal",
+                "Vertical": "vertical"
+            }
+        },
+        "position": "${builder.position}",
+        "position_left": "${builder.position_left}",
+        "position_right": "${builder.position_right}",
+        "position_top": "${builder.position_top}",
+        "position_bottom": "${builder.position_bottom}",
+        "position_z_index": "${builder.position_z_index}",
+        "maxwidth": "${builder:maxwidth}",
+        "maxwidth_breakpoint": "${builder:maxwidth_breakpoint}",
+        "block_align": "${builder:block_align}",
+        "block_align_breakpoint": "${builder:block_align_breakpoint}",
+        "block_align_fallback": "${builder:block_align_fallback}",
+        "margin": "${builder:margin}",
+        "margin_remove_top": "${builder:margin_remove_top}",
+        "margin_remove_bottom": "${builder:margin_remove_bottom}",
+        "visibility": "${builder:visibility}",
+        "name": "${builder:name}",
+        "status": "${builder:status}",
+        "source": "${builder.source}",
+        "id": "${builder:id}",
+        "class": "${builder:cls}",
+        "css": {
+            "label": "CSS",
+            "description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>, <code>.el-item</code>, <code>.el-title</code>, <code>.el-meta</code>, <code>.el-content</code>, <code>.el-image</code>, <code>.el-link</code>",
+            "type": "editor",
+            "editor": "code",
+            "mode": "css",
+            "attrs": {
+                "debounce": 500
+            }
+        }
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        "before_image",
+                        "before_image_alt",
+                        "text_before",
+                        "after_image",
+                        "after_image_alt",
+                        "text_after"
+                    ]
+                },
+                {
+                    "title": "Settings",
+                    "fields": [
+                        "offset",
+                        "direction",
+                        {
+                            "label": "General",
+                            "type": "group",
+                            "fields": [
+                                "position",
+                                "position_left",
+                                "position_right",
+                                "position_top",
+                                "position_bottom",
+                                "position_z_index",
+                                "maxwidth",
+                                "maxwidth_breakpoint",
+                                "block_align",
+                                "block_align_breakpoint",
+                                "block_align_fallback",
+                                "margin",
+                                "margin_remove_top",
+                                "margin_remove_bottom",
+                                "visibility"
+                            ]
+                        }
+                    ]
+                },
+                "${builder:advanced}"
+            ]
+        }
+    }
+}
